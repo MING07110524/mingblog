@@ -1,5 +1,5 @@
 # 起始 URL（部署时换成你自己的域名）
-baseURL: 'https://mingblog.pages.dev'
+baseURL: 'https://mingblog-1c3.pages.dev'
 # 网站标题
 title: "MING's Blog"
 # 每页显示的文章数量
