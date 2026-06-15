@@ -193,10 +193,7 @@ menu:
       name: '标签'
       url: /tags/
       weight: 20
-    - identifier: '朋友'
-      name: '朋友'
-      url: /friends/
-      weight: 30
+
     - identifier: '关于'
       name: '关于'
       url: /about/
