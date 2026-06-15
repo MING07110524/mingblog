@@ -1,0 +1,21 @@
+# Hugo build output
+public/
+
+# Hugo build lock
+.hugo_build.lock
+
+# Generated resources
+resources/
+
+# Claude AI settings (local only)
+.claude/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo

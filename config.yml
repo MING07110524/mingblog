@@ -1,0 +1,220 @@
+# 起始 URL（部署时换成你自己的域名）
+baseURL: 'https://mingblog.pages.dev'
+# 网站标题
+title: "MING's Blog"
+# 每页显示的文章数量
+paginate: 5
+# 主题名称
+theme: PaperMod
+# 语言代码（zh-简体中文）
+locale: 'zh'
+DefaultContentLanguage: 'zh'
+# 是否有 CJK 语言（中-日-韩）
+hasCJKLanguage: true
+
+# 是否生成 robots.txt
+enableRobotsTXT: true
+
+# 是否构建草稿
+buildDrafts: false
+# 是否构建未来的文章
+buildFuture: false
+# 是否构建过期的文章
+buildExpired: false
+# 是否启用 Emoji
+enableEmoji: true
+# 是否启用 Git 信息
+enableGitInfo: false
+
+# Google Analytics ID（有需要时填写）
+googleAnalytics: ''
+
+# 压缩输出静态文件
+minify:
+  # 是否不压缩 XML 文件
+  disableXML: true
+  minifyOutput: true
+
+# 全局配置
+params:
+  env: production
+  # 网站标题
+  title: "MING's Blog"
+  # 网站描述
+  description: "MING's Blog - 记录所学、所想、所爱"
+  # 网站关键词
+  # keywords: [Blog, Portfolio, PaperMod]
+
+  # 网站作者
+  author: 'MING'
+  # 多个作者写法
+  # author: ["Me", "You"]
+
+  # OpenGraph / Twitter Card 预览图片（/static 下面的文件名称）
+  images: ['opengraph.webp']
+  # 日期格式
+  DateFormat: '2006-01-02'
+  # 默认主题
+  defaultTheme: auto # dark, light
+  # 是否启用主题切换按钮
+  disableThemeToggle: false
+  # 是否启用阅读时间展示
+  ShowReadingTime: true
+  # 是否启用分享按钮
+  ShowShareButtons: true
+  # 是否启用上一篇/下一篇文章导航
+  ShowPostNavLinks: true
+  # 是否启用面包屑导航
+  ShowBreadCrumbs: true
+  # 是否显示代码复制按钮
+  ShowCodeCopyButtons: true
+  # 是否显示字数统计
+  ShowWordCount: true
+  # 是否在页面显示 RSS 按钮
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  # 是否禁用首页滚动到顶部
+  disableScrollToTop: false
+  # 是否启用评论系统
+  comments: false
+  # 是否隐藏 Meta 信息
+  hidemeta: false
+  # 是否隐藏文章摘要
+  hideSummary: false
+  # 是否显示目录
+  showtoc: false
+  # 是否默认展开文章目录
+  tocopen: false
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+
+    # 网站 Favicon 图标相关信息
+    # 可在 https://realfavicongenerator.net/ 生成
+    # 将图片复制到 /static 目录下
+    # 然后修改下面代码中的文件名
+    favicon: ''
+    favicon16x16: ''
+    favicon32x32: ''
+    apple_touch_icon: ''
+    safari_pinned_tab: ''
+
+  label:
+    # 使用文本替代 Logo 标签
+    text: "MING's Blog"
+    # 网站 Logo 图片（/static 下面的文件名称）
+    icon: ''
+    # 图标高度
+    iconHeight: 35
+
+  # 主页展示模式
+  # 个人信息模式
+  profileMode:
+    enabled: false
+    title: ExampleSite
+    subtitle: 'This is subtitle'
+    imageUrl: ''
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: my image
+    buttons:
+      - name: Posts
+        url: posts
+      - name: Tags
+        url: tags
+
+  # 主页 - 信息模式（默认）
+  homeInfoParams:
+    Title: "嗨，欢迎来到 MING's Blog \U0001F44B"
+    Content: 记录所学、所想、所爱。写代码、读好书、认真生活。
+
+  # 主页 - 信息模式 图标展示
+  socialIcons:
+    - name: github
+      url: 'https://github.com/'
+    - name: rss
+      url: '/index.xml'
+
+  # 站长验证
+  analytics:
+    google:
+      SiteVerificationTag: ''
+    bing:
+      SiteVerificationTag: ''
+    yandex:
+      SiteVerificationTag: ''
+
+  # 文章封面设置
+  cover:
+    hidden: true
+    hiddenInList: true
+    hiddenInSingle: true
+
+  # 关联编辑
+  editPost:
+    URL: ''
+    Text: 'Edit on GitHub'
+    appendFilePath: true
+
+  # 搜索配置
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ['title', 'permalink', 'summary', 'content']
+
+# 顶部导航栏
+menu:
+  main:
+    - identifier: '首页'
+      name: '首页'
+      url: /
+      weight: 1
+    - identifier: '分类'
+      name: '分类'
+      url: /categories/
+      weight: 10
+    - identifier: '标签'
+      name: '标签'
+      url: /tags/
+      weight: 20
+    - identifier: '朋友'
+      name: '朋友'
+      url: /friends/
+      weight: 30
+    - identifier: '关于'
+      name: '关于'
+      url: /about/
+      weight: 40
+
+# 代码高亮
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+
+# 隐私设置
+privacy:
+  vimeo:
+    disabled: true
+    enableDNT: true
+    simple: true
+  x:
+    enableDNT: true
+    simple: true
+  instagram:
+    disabled: true
+    simple: true
+  youtube:
+    disabled: true
+    privacyEnhanced: true
+
+services:
+  x:
+    disableInlineCSS: true
