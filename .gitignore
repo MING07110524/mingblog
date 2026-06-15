@@ -10,6 +10,9 @@ resources/
 # Claude AI settings (local only)
 .claude/
 
+# Cloudflare Wrangler cache
+.wrangler/
+
 # OS files
 .DS_Store
 Thumbs.db
