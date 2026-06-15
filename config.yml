@@ -77,7 +77,7 @@ params:
   # 是否禁用首页滚动到顶部
   disableScrollToTop: false
   # 是否启用评论系统
-  comments: true
+  comments: false
   # 是否隐藏 Meta 信息
   hidemeta: false
   # 是否隐藏文章摘要
@@ -168,15 +168,6 @@ params:
     threshold: 0.4
     minMatchCharLength: 0
     keys: ['title', 'permalink', 'summary', 'content']
-
-  # Twikoo 评论系统配置
-  twikoo:
-    # Twikoo 版本号
-    version: '1.6.44'
-    # 语言
-    lang: 'zh-CN'
-    # Vercel 后端地址（部署完 Twikoo 后端后替换为实际地址，如 https://xxx.vercel.app）
-    envId: 'https://your-twikoo.vercel.app'
 
 # 顶部导航栏
 menu:
